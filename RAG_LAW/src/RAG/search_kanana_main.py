@@ -104,9 +104,8 @@ if __name__ == "__main__":
     # query = sys.argv[1]
     query = input("검색할 쿼리를 입력해주세요: ")
     # ChromaDB 경로 설정
-    project_root = Path("C:/Users/SAMSUNG/Desktop/Grad_School/RAG_LAW")
-    lawdb_path = project_root / "Database/LawDB"
-    client = chromadb.PersistentClient(path = str(lawdb_path))
+    lawdb_path = "data/Database/LawDB"
+    client = chromadb.PersistentClient(path = lawdb_path)
     collection = client.get_or_create_collection("laws")
     # pipeline 설정
     model = "kakaocorp/kanana-1.5-2.1b-instruct-2505"

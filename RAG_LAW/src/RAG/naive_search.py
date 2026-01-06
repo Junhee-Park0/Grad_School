@@ -132,8 +132,7 @@ if __name__ == "__main__":
     print(f"ChromaDB 버전: {chromadb.__version__}")
 
     # 2. 데이터베이스 상태 확인
-    project_root = Path("C:/Users/SAMSUNG/Desktop/Grad_School/RAG_LAW")
-    lawdb_path = project_root / "Database/LawDB"
+    lawdb_path = "data/Database/LawDB"
 
     client = chromadb.PersistentClient(path=str(lawdb_path))
     collection = client.get_or_create_collection("laws")

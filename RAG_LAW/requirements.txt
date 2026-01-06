@@ -19,5 +19,9 @@ langchain-openai>=0.1.0        # OpenAI integration
 langgraph>=0.1.0               # LangGraph workflow
 langsmith>=0.1.0               # Tracking and monitoring
 openai>=1.0.0                  # OpenAI API
-
+pypdf>=3.0.1                  # PDF parsing
+pdfplumber>=0.10.0            # PDF parsing with plumber
+pytesseract>=0.1.0              # OCR
+pdf2image>=1.16.0              # PDF to image
+kss>=2.0.0                     # Korean sentence splitter
 

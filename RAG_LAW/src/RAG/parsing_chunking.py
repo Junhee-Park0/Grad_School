@@ -4,11 +4,6 @@ import re
 from pathlib import Path
 from typing import Dict, List, Optional
 
-os.chdir('C:/Users/SAMSUNG/Desktop/Grad_School/RAG_LAW')
-
-from pathlib import Path
-
-
 class ParsingAndChunking():
     def __init__(self):
         pass
@@ -536,13 +531,13 @@ class ParsingAndChunking():
         return packs
 
     def save_json_file(self, output, file_name):
-        file_path = f'DATA/Parsed/{file_name}_parsed.json'
+        file_path = f'data/Laws/Parsed/{file_name}_parsed.json'
         with open(file_path, "w", encoding = 'utf-8') as f:
             json.dump(output, f, ensure_ascii = False, indent = 4)
 
 
     def parse_and_chunk(self, folder_name, max_len, child_max_len):
-        law_jsons_folder = Path(f"DATA/{folder_name}")
+        law_jsons_folder = Path(f"data/Laws/Raw/{folder_name}")
         law_json_paths = list[Path](law_jsons_folder.glob("*.json"))
         laws_parsed_chunked = []
 
@@ -561,7 +556,7 @@ class ParsingAndChunking():
 
 if __name__ == "__main__":
     p_c = ParsingAndChunking()
-    laws_outputs = p_c.parse_and_chunk("Raw/Laws", max_len = 250, child_max_len = 200)
+    laws_outputs = p_c.parse_and_chunk("data/Laws/Raw/Laws", max_len = 250, child_max_len = 200)
 
-    with open("DATA/Processed/laws_parsed.json", "w", encoding = 'utf-8') as f:
+    with open("data/Laws/Processed/laws_parsed.json", "w", encoding = 'utf-8') as f:
         json.dump(laws_outputs, f, ensure_ascii = False, indent = 4)

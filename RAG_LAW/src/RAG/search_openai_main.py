@@ -30,7 +30,8 @@ class NaiveSearchWithAnswer():
         self.search_engine = NaiveSearchEngine(collection, self.query_embedding, top_k = 10, save_path = "Database/FilteredDB")
 
     def search(self, where : Optional[Dict] = None):
-        return self.search_engine.search(self.query_embedding, where = where)
+        search_results = self.search_engine.search(self.query_embedding, where = where)
+        return search_results
     
     def format_filtered_docs(self, filtered_docs : List[Dict]) -> str:
         if not filtered_docs:
@@ -95,19 +96,19 @@ if __name__ == "__main__":
     print(f"Query : {query}")
     print("--------------------------------")
     # ChromaDB 경로 설정
-    project_root = Path("C:/Users/SAMSUNG/Desktop/Grad_School/RAG_LAW")
-    lawdb_path = project_root / "Database/LawDB"
-    client = chromadb.PersistentClient(path = str(lawdb_path))
+    lawdb_path = "data/Database/LawDB"
+    client = chromadb.PersistentClient(path = lawdb_path)
     collection = client.get_or_create_collection("laws")
     # NaiveSearchWithAnswer 객체 생성
     naive_search_with_answer = NaiveSearchWithAnswer(collection, query)
+    naive_search_with_answer.search()
     # 검색 결과 생성
-    answer, formatted_docs = naive_search_with_answer.filter_and_generate_answer()  
-    print(f"Answer : {answer}")
-    print("--------------------------------")
-    print(f"Formatted Documents : \n\n {formatted_docs}")
-    print("--------------------------------")
-    # 필터링된 결과 저장
-    naive_search_with_answer.search_engine.save_filtered(query)
+    # answer, formatted_docs = naive_search_with_answer.filter_and_generate_answer()  
+    # print(f"Answer : {answer}")
+    # print("--------------------------------")
+    # print(f"Formatted Documents : \n\n {formatted_docs}")
+    # print("--------------------------------")
+    # # 필터링된 결과 저장
+    # naive_search_with_answer.search_engine.save_filtered(query)
     
 

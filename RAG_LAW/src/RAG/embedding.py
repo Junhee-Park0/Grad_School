@@ -7,7 +7,6 @@ from typing import Dict, List, Optional
 import numpy as np
 from sentence_transformers import SentenceTransformer
 import torch
-os.chdir("C:/Users/SAMSUNG/Desktop/Grad_School/RAG_LAW")
 
 class LawEmbeddings:
     def __init__(self, model_name : str = "BAAI/bge-m3"):
@@ -62,10 +61,10 @@ class LawEmbeddings:
         np.save(filename, embeddings)
 
 if __name__ == "__main__":
-    with open("DATA/Processed/laws_parsed.json", "r", encoding = 'utf-8') as f:
+    with open("data/Laws/Processed/laws_parsed.json", "r", encoding = 'utf-8') as f:
         laws_parsed = json.load(f)
     law_emb = LawEmbeddings()
     laws_embedded = law_emb.create_embeddings(laws_parsed)
     laws_embedded = laws_embedded.astype(np.float32)
-    law_emb.save_embeddings(laws_embedded, "DATA/Processed/laws_embedded.npy")
+    law_emb.save_embeddings(laws_embedded, "data/Laws/Processed/laws_embedded.npy")
     print("임베딩 완료 !")

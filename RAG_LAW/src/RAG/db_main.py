@@ -26,8 +26,6 @@ from chromadb.config import Settings
 from typing import List, Dict, Optional
 from vector_db import LawVectorDB
 
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-
 def get_memory_usage():
     """현재 메모리 사용량 반환 (MB)"""
     process = psutil.Process(os.getpid())
@@ -40,8 +38,7 @@ def create_vectordb():
     VectorDB 생성하기
     """
     # 0. 기존 VectorDB 완전 삭제
-    project_root = Path(__file__).resolve().parent.parent
-    vectordb_path = project_root / "Database/LawDB"
+    vectordb_path = "data/Database/LawDB"
     
     if vectordb_path.exists():
         print("기존 VectorDB 삭제 중...")
@@ -55,8 +52,7 @@ def create_vectordb():
         # 1. 문서들 불러오기
         print("=== 문서들 로드 중 ===")
         doc_start_time = time.time()
-        # 프로젝트 루트 기준으로 경로 설정
-        documents_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "DATA", "Processed", "laws_parsed.json")
+        documents_path = "data/Laws/Processed/laws_parsed.json"
         
         with open(documents_path, "r", encoding = "utf-8") as f:
             documents = json.load(f)
@@ -68,8 +64,7 @@ def create_vectordb():
         # 2. 임베딩 결과 불러오기
         print("=== 임베딩 결과 로드 중 ===")
         emb_start_time = time.time()
-        # 프로젝트 루트 기준으로 경로 설정
-        embeddings_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "DATA", "Processed", "laws_embedded.npy")
+        embeddings_path = "data/Laws/Processed/laws_embedded.npy"
         embeddings = np.load(embeddings_path)
         
         emb_loading_time = time.time() - emb_start_time
@@ -79,12 +74,9 @@ def create_vectordb():
         # 3. 벡터 DB 삭제 후 생성
         print("=== Vector DB 업데이트 중 ===")
         vectordb_start_time = time.time()
-        # 프로젝트 루트 기준으로 경로 설정
-        current_dir = Path(__file__).resolve()
-        project_dir = current_dir.parent.parent
-        vector_db_path = Path(os.path.join(project_dir, "Database", "LawDB"))
+        vector_db_path = "data/Database/LawDB"
         
-        if vector_db_path.exists():
+        if os.path.exists(vector_db_path):
             shutil.rmtree(vector_db_path)
             print("=== 기존 VectorDB 삭제 완료! ===")
         

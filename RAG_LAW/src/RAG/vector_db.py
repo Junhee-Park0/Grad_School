@@ -22,11 +22,10 @@ import gc
 import psutil
 
 class LawVectorDB:
-    def __init__(self, vectordb_path : str = "Database/LawDB", vectordb_name : str = "laws"):
-        current_dir = Path(__file__).resolve()
-        project_dir = current_dir.parent.parent
-        self.vectordb_path = project_dir / vectordb_path
-        self.vectordb_path.mkdir(parents = True, exist_ok = True)
+    def __init__(self, vectordb_path : str = "data/Database/LawDB", vectordb_name : str = "laws"):
+        self.vectordb_path = vectordb_path
+        if not os.path.exists(self.vectordb_path):
+            os.makedirs(self.vectordb_path)
         self.vectordb_name = vectordb_name
         print(f"=== VectorDB 경로: {self.vectordb_path} ===")
 
