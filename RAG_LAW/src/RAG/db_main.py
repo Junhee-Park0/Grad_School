@@ -24,7 +24,7 @@ except ImportError:
 import chromadb
 from chromadb.config import Settings
 from typing import List, Dict, Optional
-from vector_db import LawVectorDB
+from src.RAG.vector_db import LawVectorDB
 
 def get_memory_usage():
     """현재 메모리 사용량 반환 (MB)"""

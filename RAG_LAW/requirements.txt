@@ -25,3 +25,5 @@ pytesseract>=0.1.0              # OCR
 pdf2image>=1.16.0              # PDF to image
 kss>=2.0.0                     # Korean sentence splitter
 
+# Web Search
+tavily>=0.1.0                  # Web search API

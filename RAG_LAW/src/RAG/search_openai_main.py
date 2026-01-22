@@ -14,9 +14,9 @@ import openai
 from dotenv import load_dotenv
 load_dotenv()
 
-from naive_search import NaiveSearchEngine
+from src.RAG.naive_search import NaiveSearchEngine
 # search, save_filtered, load_filtered 함수
-from embedding import LawEmbeddings
+from src.RAG.embedding import LawEmbeddings
 # create_query_embedding 함수
 
 # 문서 필터링 진행
@@ -27,7 +27,7 @@ class NaiveSearchWithAnswer():
         self.model = model
         self.client = openai.OpenAI()
         self.query_embedding = LawEmbeddings().create_query_embedding(query)
-        self.search_engine = NaiveSearchEngine(collection, self.query_embedding, top_k = 10, save_path = "Database/FilteredDB")
+        self.search_engine = NaiveSearchEngine(collection, self.query_embedding, top_k = 15, save_path = "Database/FilteredDB")
 
     def search(self, where : Optional[Dict] = None):
         search_results = self.search_engine.search(self.query_embedding, where = where)

@@ -1,27 +1,20 @@
-from typing import List, Dict, Optional, Literal
-from pydantic import BaseModel, Field
+from typing import List, Dict, Optional, Literal, Any
+from pydantic import BaseModel, Field, ConfigDict
 
 class UserInput(BaseModel):
     """사용자 입력 형식"""
     query : Optional[str] = Field(description = "The user's question")
-    document_path : Optional[List[str]] = Field(description = "The path of the documents (ex. PDF)")
-
-class InputType(BaseModel):
-    """입력 형식"""
-    input_type : Literal["Query_Only", "Document_Only", "Hybrid", "Error"]
-
-class InputQuery(BaseModel):
-    """입력 쿼리/문서의 형식"""
-    query : str = Field(..., description = "The user's question")
-    enhanced_query : str = Field(..., description = "The enhanced, expanded question")
-    document_ocr : Optional[dict] = Field(description = "The OCR result of the document")
-    input_type : InputType
+    document_path : Optional[str] = Field(description = "The path of the document (ex. PDF)")
 
 class InputDocument(BaseModel):
     """입력 문서의 OCR 결과 형식"""
     document : str = Field(..., description = "The parsed document")
-    contract_type : str = Field(..., description = "The type of the contract")
 
+class QueryAnswerable(BaseModel):
+    """질문이 문서 없이 답변 가능한지 판단하는 형식"""
+    answerable : Literal["ANSWERABLE", "NOT_ANSWERABLE"] = Field(description = "Whether the question can be answered without the document")
+    reason : str = Field(description = "Reason for the decision")
+    
 class DocumentIssue(BaseModel):
     """OCR 결과 문서에서 추출한 쟁점 하나의 형식"""
     issue : str = Field(..., description = "The issue extracted from the document")
@@ -33,13 +26,70 @@ class IssuesList(BaseModel):
     """DocumentIssue의 리스트"""
     issues : List[DocumentIssue] = Field(..., description = "The list of issues extracted from the document")
 
+class CombinedQuery(BaseModel):
+    """질문 + 문서 쟁점들 통합한 쿼리 하나의 형식"""
+    query : str = Field(..., description = "User's question & document issues")
+    type : Literal["Question", "Document"] = Field(..., description = "The type of the query")
+    position : Optional[str] = Field(None, description = "The position where the issue is located (e.g. 'Article 10', 'Section 2')")
+    reason : Optional[str] = Field(None, description = "The reason for the issue")
+
+    @property
+    def to_rag_query(self) -> str:
+        """RAG 검색 쿼리로 변환하는 메서드"""
+        if self.type == "Question":
+            return self.query
+        else:
+            return f"{self.query} {self.reason}"
+
+class QueryList(BaseModel):
+    """CombinedQuery의 리스트"""
+    combined_queries : List[CombinedQuery] = Field(..., description = "The combined queries (question + document issues)")
+
+class Metadata(BaseModel):
+    """OpenAI와 호환을 위해 정의한 메타데이터 전용 스키마"""
+    model_config = ConfigDict(extra="forbid")
+    # RAG metadata 필드들
+    eff_date: Optional[str] = Field(None, description = "The effective date of the law")
+    law_name: Optional[str] = Field(None, description = "The name of the law")
+    law_path: Optional[str] = Field(None, description = "The path to the law document")
+    # Web search metadata 필드들
+    published_date: Optional[str] = Field(None, description = "The published date of the web page")
+    query_used: Optional[str] = Field(None, description = "The search query used to find this result")
+    domain: Optional[str] = Field(None, description = "The domain of the web page")
+    title: Optional[str] = Field(None, description = "The title of the web page")
+    editor: Optional[str] = Field(None, description = "The editor of the web page")
+
+class ContextOutput(BaseModel):
+    """한 번 더 필터링된 최종 문서 하나의 컨텍스트 형식(RAG + 외부 검색)"""
+    rank : Optional[int] = Field(None, description = "Re-calculated rank of the document based on relevance. None before reranking")
+    doc_type : Literal["Internal_DB", "External_Web"] 
+    text : str = Field(..., description = "The text of the document")
+    metadata : Metadata = Field(..., description = "The metadata of the document")
+    source : str = Field(..., description = "The source of the document")
+    relevance_score : float = Field(..., description = "Re-calculated relevance score of the document")
+
+class ContextList(BaseModel):
+    """ContextOutput의 리스트"""
+    list_contexts : List[ContextOutput] = Field(..., description = "The list of contexts")
+
 class RAGOutput(BaseModel):
     """RAG 결과 하나의 형식"""
     search_rank : int = Field(..., description = "The rank of the document based on relevance")
     text : str = Field(..., description = "The text of the document")
     source : str = Field(..., description = "The source of the document")
-    metadata : dict = Field(..., description = "The metadata of the document")
+    metadata : Metadata = Field(..., description = "The metadata of the document")
     relevance_score : float = Field(..., description = "The relevance score of the document")
+
+    @property
+    def to_context(self) -> ContextOutput:
+        return ContextOutput(
+            rank = self.search_rank,
+            doc_type = "Internal_DB",
+            text = self.text,
+            metadata = self.metadata,
+            source = self.source,
+            relevance_score = self.relevance_score
+        )
 
 class RAGList(BaseModel):
     """RAGOutput의 리스트"""
@@ -50,38 +100,53 @@ class EnoughContext(BaseModel):
     enough_context : Literal["ENOUGH", "NOT_ENOUGH"]
     reason : str = Field(..., description = "The reason for the decision (whether or not we need external search)")
 
+class WebSearchQueries(BaseModel):
+    """Web Search를 위한 쿼리 리스트"""
+    web_search_queries : List[str] = Field(..., min_items = 6, max_items = 6, description = "The list of web search queries (must be exactly 6 queries)")
+
 class WebSearchOutput(BaseModel):
     """Web Search 결과 하나의 형식"""
     title : str = Field(..., description = "The title of the web page")
     text : str = Field(..., description = "The text of the web page")
     source : str = Field(..., description = "The URL of the web page")
-    metadata : dict = Field(..., description = "{'title', 'date', 'editor' etc.}")
+    metadata : Metadata = Field(..., description = "{'title', 'date', 'editor' etc.}")
+    relevance_score : float = Field(..., description = "The relevance score of the web page")
+
+    @property
+    def to_context(self) -> ContextOutput:
+        return ContextOutput(
+            rank = None,
+            doc_type = "External_Web",
+            text = self.text,
+            metadata = self.metadata,
+            source = self.source,
+            relevance_score = self.relevance_score
+        )
 
 class WebSearchList(BaseModel):
     """WebSearchOutput의 리스트"""
     list_web_results : List[WebSearchOutput] = Field(..., description = "The list of web search results")
 
-class ContextOutput(BaseModel):
-    """한 번 더 필터링된 최종 문서 하나의 컨텍스트 형식(RAG + 외부 검색)"""
-    rank : Optional[int] = Field(None, description = "Re-calculated rank of the document based on relevance. None before reranking")
-    doc_type : Literal["Internal_DB", "External_Web"] 
-    text : str = Field(..., description = "The text of the document")
-    metadata : dict = Field(..., description = "The metadata of the document")
-    source : str = Field(..., description = "The source of the document")
-    relevance_score : float = Field(..., description = "Re-calculated relevance score of the document")
-
-class ContextList(BaseModel):
-    """ContextOutput의 리스트"""
-    list_contexts : List[ContextOutput] = Field(..., description = "The list of contexts")
-
 class AnswerOutput(BaseModel):
     """최종 답변 형식"""
-    input_type : InputType 
-    answer : str = Field(..., description = "The final answer")
-    source : List[str] = Field(..., description = "List of sources that were actually used when generating the answer.")
-    context : List[ContextOutput] = Field(..., description = "The total contexts that were actually used when generating the answer")
+    input_type : Literal["Query_Only", "Hybrid", "Error"] 
+    answer : str = Field(
+        ..., 
+        description = "The final answer. MUST end with '## 참고자료' section that lists all cited sources. "
+                     "The answer MUST use at least 70% of provided contexts. "
+                     "Format: (main content) + '\\n\\n## 참고자료\\n\\n[1] source1\\n[2] source2\\n...'"
+    )
+    source : List[str] = Field(
+        ..., 
+        min_length = 5,
+        description = "List of sources that were actually used. Must include at least 5 sources. More is better."
+    )
+    context : List[ContextOutput] = Field(
+        ..., 
+        min_length = 5,
+        description = "The total contexts that were actually used. Must include at least 5 contexts. More is better."
+    )
     risk_summary : str = Field(..., description = "Summary of potential risks, missing info, etc.")
-    retry_count : int = Field(0, description = "Number of retries for a satisfactory answer")
     confidence_score : float = Field(default = 0.0, description = "Internal confidence score for how well the context covers the answer")
 
 class AnswerEnough(BaseModel):

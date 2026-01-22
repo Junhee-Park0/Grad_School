@@ -9,7 +9,7 @@ import numpy as np
 import pandas as pd
 from collections import Counter, defaultdict
 
-from embedding import LawEmbeddings
+from src.RAG.embedding import LawEmbeddings
 
 # ChromaDB 텔레메트리 비활성화 (오류 방지)
 os.environ["ANONYMIZED_TELEMETRY"] = "False"

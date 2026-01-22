@@ -13,9 +13,9 @@ from collections import Counter, defaultdict
 import torch    
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, pipeline
 
-from naive_search import NaiveSearchEngine
+from src.RAG.naive_search import NaiveSearchEngine
 # search, save_filtered, load_filtered 함수
-from embedding import LawEmbeddings
+from src.RAG.embedding import LawEmbeddings
 # create_query_embedding 함수
 
 # 문서 필터링 진행
