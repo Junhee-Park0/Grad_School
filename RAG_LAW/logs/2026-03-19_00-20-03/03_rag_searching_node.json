@@ -1,0 +1,540 @@
+{
+  "node": "rag_searching_node",
+  "order": 3,
+  "timestamp": "2026-03-19T00:20:17.000042",
+  "input": {
+    "original_input": {
+      "query": "개인회생과 개인파산은 어떤 차이가 있죠?",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "개인회생과 개인파산은 어떤 차이가 있죠?",
+    "extended_query": "개인회생과 개인파산의 법적 차이점 설명",
+    "all_contexts": [],
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "combined_queries": {
+      "combined_queries": [
+        {
+          "query": "개인회생과 개인파산의 법적 차이점 설명",
+          "type": "Question",
+          "position": null,
+          "reason": null
+        }
+      ]
+    },
+    "rag_results": {
+      "list_rag_results": [
+        {
+          "search_rank": 0,
+          "text": " ① 법원은 공사가 보험금 지급 또는 자금지원을 하는 부보금융회사(\"금융산업의 구조개선에 관한 법률\"에 따라 계약이전이 결정된 부보금융회사로서 공사가 자금지원을 하려는 경우를 포함한다)가 해산 또는 파산한 경우 지원자금 등을 효율적으로 회수할 필요가 있을 때에는 \"상법\" 제531조 또는 \"채무자 회생 및 파산에 관한 법률\" 제355조 및 청산인 또는 파산관재",
+          "source": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 1항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.10447776317596436
+        },
+        {
+          "search_rank": 1,
+          "text": "소득세법 제5장 원천징수 제3절 원천징수의 특례 제155조의4(상여처분의 원천징수 특례) ① 법인이 \"채무자 회생 및 파산에 관한 법률\"에 따른 회생절차에 따라 특수관계인이 아닌 다른 법인에 합병되는 등 지배주주가 변경(이하 이 조에서 \"인수\"라 한다)된 이후 회생절차 개시 전에 발생한 사유로 인수된 법인의 대표자 등에 대하여 \"법인세법\" 제67조에 따라 상여로 처분되는 대통령령으로 정하는 소득에 대해서는 제127조에도 불구하고 소득세를 원천징",
+          "source": "제5장 원천징수 제3절 원천징수의 특례 - 155조(가지4) - 1항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제5장 원천징수 제3절 원천징수의 특례 - 155조(가지4) - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.08663004636764526
+        },
+        {
+          "search_rank": 2,
+          "text": "자본시장과 금융투자업에 관한 법률 제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 제65조(외국 금융투자업자의 특례) ③ 국내지점등이 청산 또는 파산하는 경우 그 국내에 두는 자산은 국내에 주소 또는 거소가 있는 자에 대한 채무의 변제에 우선 충당하여야 한다.",
+          "source": "제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 - 65조 - 3항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 - 65조 - 3항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.08038759231567383
+        },
+        {
+          "search_rank": 3,
+          "text": "채권의 공정한 추심에 관한 법률  제12조(불공정한 행위의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 4. \"채무자 회생 및 파산에 관한 법률\"에 따른 회생절차, 파산절차 또는 개인회생절차에 따라 전부 또는 일부 면책되었음을 알면서 법령으로 정한 절차 외에서 반복적으로 채무변제를 요구하는 행위",
+          "source": " - 12조 - 4호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 12조 - 4호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.0706515908241272
+        },
+        {
+          "search_rank": 4,
+          "text": " 이 경우 \"주주\"는 \"사원(법인이사인 사원은 제외한다)\"으로, \"투자회사\"는 각각 \"투자유한회사\"로, \"주주총회\"는 각각 \"사원총회\"로, \"법인이사 및 감독이사\"는 \"법인이사\"로, \"청산인 및 청산감독인\" 및 \"청산인 또는 청산감독인\"은 각각 \"청산인\"으로, \"재산목록과 재무상태표를 작성하여 이를 청산인회에 제출하여 그 승인을 받은 후 그 등본을\"은 \"재산",
+          "source": "제5편 집합투자기구 제2장 집합투자기구의 구성 등 제2관 투자유한회사 - 211조 - 2항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제5편 집합투자기구 제2장 집합투자기구의 구성 등 제2관 투자유한회사 - 211조 - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.06449234485626221
+        },
+        {
+          "search_rank": 5,
+          "text": "예금자보호법 제4장 부실금융회사의 정리 등 제35조의8(청산인 또는 파산관재인의 업무 등) ② 제1항에 따라 공사가 청산인 또는 파산관재인인 경우에는 \"상법\" 제539조제2항 및 \"채무자 회생 및 파산에 관한 법률\" 제364조ㆍ제492조를 적용하지 아니한다.",
+          "source": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 2항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.05895066261291504
+        },
+        {
+          "search_rank": 6,
+          "text": "채권의 공정한 추심에 관한 법률  제12조(불공정한 행위의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 3의2. \"채무자 회생 및 파산에 관한 법률\" 제593조제1항제4호 또는 제600조제1항제3호에 따라 개인회생채권에 대한 변제를 받거나 변제를 요구하는 일체의 행위가 중지 또는 금지되었음을 알면서 법령으로 정한 절차 외에서 반복적으로 채무변제를 요구하는 행위",
+          "source": " - 12조 - 3호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 12조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.038430213928222656
+        },
+        {
+          "search_rank": 7,
+          "text": "① 공사는 이 법의 목적을 달성하기 위하여 다음 각 호의 업무를 수행한다. 2. 부실징후기업 및 구조개선기업의 경영정상화 지원을 위한 다음 각 목의 업무 다. \"채무자 회생 및 파산에 관한 법률\" 제34조 또는 제35조에 따라 법원에 회생절차개시를 신청한 기업 등에 대한 자금의 대여 및 지급보증을 위한 특수목적법인에 대한 출자. 이 경우 자금대여ㆍ지급보증의 대상ㆍ방식, 지급보증의 범위는 대통령령으로 정한다.",
+          "source": "제3장 한국자산관리공사 제4절 업무 - 26조 - 1항 - 2호 - 3목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 한국자산관리공사 제4절 업무 - 26조 - 1항 - 2호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.0349048376083374
+        },
+        {
+          "search_rank": 8,
+          "text": "민법 제3장 법인 제4절 해산 제82조(청산인) 법인이 해산한 때에는 파산의 경우를 제하고는 이사가 청산인이 된다. 그러나 정관 또는 총회의 결의로 달리 정한 바가 있으면 그에 의한다.",
+          "source": "82조",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "82조",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.031210780143737793
+        },
+        {
+          "search_rank": 9,
+          "text": "은행법 제9장 외국은행의 국내지점 제62조(외국은행의 국내 자산) ② 외국은행의 지점 또는 대리점이 청산을 하거나 파산한 경우 그 자산, 자본금, 적립금, 그 밖의 잉여금은 대한민국 국민과 대한민국에 주소 또는 거소(居所)를 둔 외국인의 채무를 변제하는 데에 우선 충당되어야 한다.",
+          "source": "제9장 외국은행의 국내지점 - 62조 - 2항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제9장 외국은행의 국내지점 - 62조 - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.024472475051879883
+        }
+      ]
+    },
+    "all_contexts": [
+      {
+        "rank": 0,
+        "doc_type": "Internal_DB",
+        "text": " ① 법원은 공사가 보험금 지급 또는 자금지원을 하는 부보금융회사(\"금융산업의 구조개선에 관한 법률\"에 따라 계약이전이 결정된 부보금융회사로서 공사가 자금지원을 하려는 경우를 포함한다)가 해산 또는 파산한 경우 지원자금 등을 효율적으로 회수할 필요가 있을 때에는 \"상법\" 제531조 또는 \"채무자 회생 및 파산에 관한 법률\" 제355조 및 청산인 또는 파산관재",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 1항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 1항",
+        "relevance_score": 0.10447776317596436
+      },
+      {
+        "rank": 1,
+        "doc_type": "Internal_DB",
+        "text": "소득세법 제5장 원천징수 제3절 원천징수의 특례 제155조의4(상여처분의 원천징수 특례) ① 법인이 \"채무자 회생 및 파산에 관한 법률\"에 따른 회생절차에 따라 특수관계인이 아닌 다른 법인에 합병되는 등 지배주주가 변경(이하 이 조에서 \"인수\"라 한다)된 이후 회생절차 개시 전에 발생한 사유로 인수된 법인의 대표자 등에 대하여 \"법인세법\" 제67조에 따라 상여로 처분되는 대통령령으로 정하는 소득에 대해서는 제127조에도 불구하고 소득세를 원천징",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제5장 원천징수 제3절 원천징수의 특례 - 155조(가지4) - 1항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제5장 원천징수 제3절 원천징수의 특례 - 155조(가지4) - 1항",
+        "relevance_score": 0.08663004636764526
+      },
+      {
+        "rank": 2,
+        "doc_type": "Internal_DB",
+        "text": "자본시장과 금융투자업에 관한 법률 제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 제65조(외국 금융투자업자의 특례) ③ 국내지점등이 청산 또는 파산하는 경우 그 국내에 두는 자산은 국내에 주소 또는 거소가 있는 자에 대한 채무의 변제에 우선 충당하여야 한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 - 65조 - 3항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 - 65조 - 3항",
+        "relevance_score": 0.08038759231567383
+      },
+      {
+        "rank": 3,
+        "doc_type": "Internal_DB",
+        "text": "채권의 공정한 추심에 관한 법률  제12조(불공정한 행위의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 4. \"채무자 회생 및 파산에 관한 법률\"에 따른 회생절차, 파산절차 또는 개인회생절차에 따라 전부 또는 일부 면책되었음을 알면서 법령으로 정한 절차 외에서 반복적으로 채무변제를 요구하는 행위",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": " - 12조 - 4호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": " - 12조 - 4호",
+        "relevance_score": 0.0706515908241272
+      },
+      {
+        "rank": 4,
+        "doc_type": "Internal_DB",
+        "text": " 이 경우 \"주주\"는 \"사원(법인이사인 사원은 제외한다)\"으로, \"투자회사\"는 각각 \"투자유한회사\"로, \"주주총회\"는 각각 \"사원총회\"로, \"법인이사 및 감독이사\"는 \"법인이사\"로, \"청산인 및 청산감독인\" 및 \"청산인 또는 청산감독인\"은 각각 \"청산인\"으로, \"재산목록과 재무상태표를 작성하여 이를 청산인회에 제출하여 그 승인을 받은 후 그 등본을\"은 \"재산",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제5편 집합투자기구 제2장 집합투자기구의 구성 등 제2관 투자유한회사 - 211조 - 2항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제5편 집합투자기구 제2장 집합투자기구의 구성 등 제2관 투자유한회사 - 211조 - 2항",
+        "relevance_score": 0.06449234485626221
+      },
+      {
+        "rank": 5,
+        "doc_type": "Internal_DB",
+        "text": "예금자보호법 제4장 부실금융회사의 정리 등 제35조의8(청산인 또는 파산관재인의 업무 등) ② 제1항에 따라 공사가 청산인 또는 파산관재인인 경우에는 \"상법\" 제539조제2항 및 \"채무자 회생 및 파산에 관한 법률\" 제364조ㆍ제492조를 적용하지 아니한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 2항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 2항",
+        "relevance_score": 0.05895066261291504
+      },
+      {
+        "rank": 6,
+        "doc_type": "Internal_DB",
+        "text": "채권의 공정한 추심에 관한 법률  제12조(불공정한 행위의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 3의2. \"채무자 회생 및 파산에 관한 법률\" 제593조제1항제4호 또는 제600조제1항제3호에 따라 개인회생채권에 대한 변제를 받거나 변제를 요구하는 일체의 행위가 중지 또는 금지되었음을 알면서 법령으로 정한 절차 외에서 반복적으로 채무변제를 요구하는 행위",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": " - 12조 - 3호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": " - 12조 - 3호",
+        "relevance_score": 0.038430213928222656
+      },
+      {
+        "rank": 7,
+        "doc_type": "Internal_DB",
+        "text": "① 공사는 이 법의 목적을 달성하기 위하여 다음 각 호의 업무를 수행한다. 2. 부실징후기업 및 구조개선기업의 경영정상화 지원을 위한 다음 각 목의 업무 다. \"채무자 회생 및 파산에 관한 법률\" 제34조 또는 제35조에 따라 법원에 회생절차개시를 신청한 기업 등에 대한 자금의 대여 및 지급보증을 위한 특수목적법인에 대한 출자. 이 경우 자금대여ㆍ지급보증의 대상ㆍ방식, 지급보증의 범위는 대통령령으로 정한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제3장 한국자산관리공사 제4절 업무 - 26조 - 1항 - 2호 - 3목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제3장 한국자산관리공사 제4절 업무 - 26조 - 1항 - 2호 - 3목",
+        "relevance_score": 0.0349048376083374
+      },
+      {
+        "rank": 8,
+        "doc_type": "Internal_DB",
+        "text": "민법 제3장 법인 제4절 해산 제82조(청산인) 법인이 해산한 때에는 파산의 경우를 제하고는 이사가 청산인이 된다. 그러나 정관 또는 총회의 결의로 달리 정한 바가 있으면 그에 의한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "82조",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "82조",
+        "relevance_score": 0.031210780143737793
+      },
+      {
+        "rank": 9,
+        "doc_type": "Internal_DB",
+        "text": "은행법 제9장 외국은행의 국내지점 제62조(외국은행의 국내 자산) ② 외국은행의 지점 또는 대리점이 청산을 하거나 파산한 경우 그 자산, 자본금, 적립금, 그 밖의 잉여금은 대한민국 국민과 대한민국에 주소 또는 거소(居所)를 둔 외국인의 채무를 변제하는 데에 우선 충당되어야 한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제9장 외국은행의 국내지점 - 62조 - 2항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제9장 외국은행의 국내지점 - 62조 - 2항",
+        "relevance_score": 0.024472475051879883
+      }
+    ],
+    "reranked_contexts": {
+      "list_contexts": [
+        {
+          "rank": 0,
+          "doc_type": "Internal_DB",
+          "text": " ① 법원은 공사가 보험금 지급 또는 자금지원을 하는 부보금융회사(\"금융산업의 구조개선에 관한 법률\"에 따라 계약이전이 결정된 부보금융회사로서 공사가 자금지원을 하려는 경우를 포함한다)가 해산 또는 파산한 경우 지원자금 등을 효율적으로 회수할 필요가 있을 때에는 \"상법\" 제531조 또는 \"채무자 회생 및 파산에 관한 법률\" 제355조 및 청산인 또는 파산관재",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 1항",
+          "relevance_score": 0.10447776317596436
+        },
+        {
+          "rank": 1,
+          "doc_type": "Internal_DB",
+          "text": "소득세법 제5장 원천징수 제3절 원천징수의 특례 제155조의4(상여처분의 원천징수 특례) ① 법인이 \"채무자 회생 및 파산에 관한 법률\"에 따른 회생절차에 따라 특수관계인이 아닌 다른 법인에 합병되는 등 지배주주가 변경(이하 이 조에서 \"인수\"라 한다)된 이후 회생절차 개시 전에 발생한 사유로 인수된 법인의 대표자 등에 대하여 \"법인세법\" 제67조에 따라 상여로 처분되는 대통령령으로 정하는 소득에 대해서는 제127조에도 불구하고 소득세를 원천징",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제5장 원천징수 제3절 원천징수의 특례 - 155조(가지4) - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제5장 원천징수 제3절 원천징수의 특례 - 155조(가지4) - 1항",
+          "relevance_score": 0.08663004636764526
+        },
+        {
+          "rank": 2,
+          "doc_type": "Internal_DB",
+          "text": "자본시장과 금융투자업에 관한 법률 제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 제65조(외국 금융투자업자의 특례) ③ 국내지점등이 청산 또는 파산하는 경우 그 국내에 두는 자산은 국내에 주소 또는 거소가 있는 자에 대한 채무의 변제에 우선 충당하여야 한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 - 65조 - 3항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제2편 금융투자업 제4장 영업행위 규칙 제3관 직무관련 정보의 이용 금지 등 - 65조 - 3항",
+          "relevance_score": 0.08038759231567383
+        },
+        {
+          "rank": 3,
+          "doc_type": "Internal_DB",
+          "text": "채권의 공정한 추심에 관한 법률  제12조(불공정한 행위의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 4. \"채무자 회생 및 파산에 관한 법률\"에 따른 회생절차, 파산절차 또는 개인회생절차에 따라 전부 또는 일부 면책되었음을 알면서 법령으로 정한 절차 외에서 반복적으로 채무변제를 요구하는 행위",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 12조 - 4호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": " - 12조 - 4호",
+          "relevance_score": 0.0706515908241272
+        },
+        {
+          "rank": 4,
+          "doc_type": "Internal_DB",
+          "text": " 이 경우 \"주주\"는 \"사원(법인이사인 사원은 제외한다)\"으로, \"투자회사\"는 각각 \"투자유한회사\"로, \"주주총회\"는 각각 \"사원총회\"로, \"법인이사 및 감독이사\"는 \"법인이사\"로, \"청산인 및 청산감독인\" 및 \"청산인 또는 청산감독인\"은 각각 \"청산인\"으로, \"재산목록과 재무상태표를 작성하여 이를 청산인회에 제출하여 그 승인을 받은 후 그 등본을\"은 \"재산",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제5편 집합투자기구 제2장 집합투자기구의 구성 등 제2관 투자유한회사 - 211조 - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제5편 집합투자기구 제2장 집합투자기구의 구성 등 제2관 투자유한회사 - 211조 - 2항",
+          "relevance_score": 0.06449234485626221
+        },
+        {
+          "rank": 5,
+          "doc_type": "Internal_DB",
+          "text": "예금자보호법 제4장 부실금융회사의 정리 등 제35조의8(청산인 또는 파산관재인의 업무 등) ② 제1항에 따라 공사가 청산인 또는 파산관재인인 경우에는 \"상법\" 제539조제2항 및 \"채무자 회생 및 파산에 관한 법률\" 제364조ㆍ제492조를 적용하지 아니한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제4장 부실금융회사의 정리 등 - 35조(가지8) - 2항",
+          "relevance_score": 0.05895066261291504
+        },
+        {
+          "rank": 6,
+          "doc_type": "Internal_DB",
+          "text": "채권의 공정한 추심에 관한 법률  제12조(불공정한 행위의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 3의2. \"채무자 회생 및 파산에 관한 법률\" 제593조제1항제4호 또는 제600조제1항제3호에 따라 개인회생채권에 대한 변제를 받거나 변제를 요구하는 일체의 행위가 중지 또는 금지되었음을 알면서 법령으로 정한 절차 외에서 반복적으로 채무변제를 요구하는 행위",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 12조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": " - 12조 - 3호",
+          "relevance_score": 0.038430213928222656
+        },
+        {
+          "rank": 7,
+          "doc_type": "Internal_DB",
+          "text": "① 공사는 이 법의 목적을 달성하기 위하여 다음 각 호의 업무를 수행한다. 2. 부실징후기업 및 구조개선기업의 경영정상화 지원을 위한 다음 각 목의 업무 다. \"채무자 회생 및 파산에 관한 법률\" 제34조 또는 제35조에 따라 법원에 회생절차개시를 신청한 기업 등에 대한 자금의 대여 및 지급보증을 위한 특수목적법인에 대한 출자. 이 경우 자금대여ㆍ지급보증의 대상ㆍ방식, 지급보증의 범위는 대통령령으로 정한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 한국자산관리공사 제4절 업무 - 26조 - 1항 - 2호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제3장 한국자산관리공사 제4절 업무 - 26조 - 1항 - 2호 - 3목",
+          "relevance_score": 0.0349048376083374
+        },
+        {
+          "rank": 8,
+          "doc_type": "Internal_DB",
+          "text": "민법 제3장 법인 제4절 해산 제82조(청산인) 법인이 해산한 때에는 파산의 경우를 제하고는 이사가 청산인이 된다. 그러나 정관 또는 총회의 결의로 달리 정한 바가 있으면 그에 의한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "82조",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "82조",
+          "relevance_score": 0.031210780143737793
+        },
+        {
+          "rank": 9,
+          "doc_type": "Internal_DB",
+          "text": "은행법 제9장 외국은행의 국내지점 제62조(외국은행의 국내 자산) ② 외국은행의 지점 또는 대리점이 청산을 하거나 파산한 경우 그 자산, 자본금, 적립금, 그 밖의 잉여금은 대한민국 국민과 대한민국에 주소 또는 거소(居所)를 둔 외국인의 채무를 변제하는 데에 우선 충당되어야 한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제9장 외국은행의 국내지점 - 62조 - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제9장 외국은행의 국내지점 - 62조 - 2항",
+          "relevance_score": 0.024472475051879883
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,544 @@
+{
+  "node": "context_evaluating_node",
+  "order": 4,
+  "timestamp": "2026-03-18T15:38:54.308529",
+  "input": {
+    "original_input": {
+      "query": "신용카드와 체크카드의 차이가 모지",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "신용카드와 체크카드의 차이가 모지",
+    "extended_query": "신용카드와 체크카드의 차이가 무엇인지 모 : 신용카드 체크카드 법적 차이",
+    "combined_queries": {
+      "combined_queries": [
+        {
+          "query": "신용카드와 체크카드의 차이가 무엇인지 모 : 신용카드 체크카드 법적 차이",
+          "type": "Question",
+          "position": null,
+          "reason": null
+        }
+      ]
+    },
+    "rag_results": {
+      "list_rag_results": [
+        {
+          "search_rank": 0,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 나. 신용카드 이용과 관련된 대금(代金)의 결제",
+          "source": "제1장 총칙 - 2조 - 2호 - 2목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.2548257112503052
+        },
+        {
+          "search_rank": 1,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 가. 금전채무의 상환",
+          "source": "제1장 총칙 - 2조 - 3호 - 1목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.24249446392059326
+        },
+        {
+          "search_rank": 2,
+          "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 라. 신청인이 신용카드 발급 당시 다른 금융기관으로부터 받은 신용공여액(信用供與額)에 관한 사항",
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 4목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 4목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.2353258728981018
+        },
+        {
+          "search_rank": 3,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다.",
+          "source": "제1장 총칙 - 2조 - 3호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.2324468493461609
+        },
+        {
+          "search_rank": 4,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 가. 신용카드의 발행 및 관리",
+          "source": "제1장 총칙 - 2조 - 2호 - 1목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.22950398921966553
+        },
+        {
+          "search_rank": 5,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 나. \"자본시장과 금융투자업에 관한 법률\" 제3조제1항에 따른 금융투자상품 등 대통령령으로 정하는 금융상품",
+          "source": "제1장 총칙 - 2조 - 3호 - 2목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.2262246012687683
+        },
+        {
+          "search_rank": 6,
+          "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 다. 신용카드이용대금을 결제할 수 있는 능력에 관한 사항",
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 3목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.22359275817871094
+        },
+        {
+          "search_rank": 7,
+          "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 마. 그 밖에 신용한도 산정에 중요한 사항으로서 대통령령으로 정하는 사항",
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 5목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 5목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.2215183973312378
+        },
+        {
+          "search_rank": 8,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다.",
+          "source": "제1장 총칙 - 2조 - 2호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.2190837860107422
+        },
+        {
+          "search_rank": 9,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 다. 신용카드가맹점의 모집 및 관리",
+          "source": "제1장 총칙 - 2조 - 2호 - 3목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.20950132608413696
+        }
+      ]
+    },
+    "all_contexts": [
+      {
+        "rank": 0,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 나. 신용카드 이용과 관련된 대금(代金)의 결제",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 2호 - 2목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 2호 - 2목",
+        "relevance_score": 0.2548257112503052
+      },
+      {
+        "rank": 1,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 가. 금전채무의 상환",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 3호 - 1목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 3호 - 1목",
+        "relevance_score": 0.24249446392059326
+      },
+      {
+        "rank": 2,
+        "doc_type": "Internal_DB",
+        "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 라. 신청인이 신용카드 발급 당시 다른 금융기관으로부터 받은 신용공여액(信用供與額)에 관한 사항",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 4목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 4목",
+        "relevance_score": 0.2353258728981018
+      },
+      {
+        "rank": 3,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 3호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 3호",
+        "relevance_score": 0.2324468493461609
+      },
+      {
+        "rank": 4,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 가. 신용카드의 발행 및 관리",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 2호 - 1목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 2호 - 1목",
+        "relevance_score": 0.22950398921966553
+      },
+      {
+        "rank": 5,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 나. \"자본시장과 금융투자업에 관한 법률\" 제3조제1항에 따른 금융투자상품 등 대통령령으로 정하는 금융상품",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 3호 - 2목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 3호 - 2목",
+        "relevance_score": 0.2262246012687683
+      },
+      {
+        "rank": 6,
+        "doc_type": "Internal_DB",
+        "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 다. 신용카드이용대금을 결제할 수 있는 능력에 관한 사항",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 3목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 3목",
+        "relevance_score": 0.22359275817871094
+      },
+      {
+        "rank": 7,
+        "doc_type": "Internal_DB",
+        "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 마. 그 밖에 신용한도 산정에 중요한 사항으로서 대통령령으로 정하는 사항",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 5목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 5목",
+        "relevance_score": 0.2215183973312378
+      },
+      {
+        "rank": 8,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 2호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 2호",
+        "relevance_score": 0.2190837860107422
+      },
+      {
+        "rank": 9,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 다. 신용카드가맹점의 모집 및 관리",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 2호 - 3목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 2호 - 3목",
+        "relevance_score": 0.20950132608413696
+      }
+    ],
+    "reranked_contexts": {
+      "list_contexts": [
+        {
+          "rank": 0,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 나. 신용카드 이용과 관련된 대금(代金)의 결제",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 2호 - 2목",
+          "relevance_score": 0.2548257112503052
+        },
+        {
+          "rank": 1,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 가. 금전채무의 상환",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 3호 - 1목",
+          "relevance_score": 0.24249446392059326
+        },
+        {
+          "rank": 2,
+          "doc_type": "Internal_DB",
+          "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 라. 신청인이 신용카드 발급 당시 다른 금융기관으로부터 받은 신용공여액(信用供與額)에 관한 사항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 4목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 4목",
+          "relevance_score": 0.2353258728981018
+        },
+        {
+          "rank": 3,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 3호",
+          "relevance_score": 0.2324468493461609
+        },
+        {
+          "rank": 4,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 가. 신용카드의 발행 및 관리",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 2호 - 1목",
+          "relevance_score": 0.22950398921966553
+        },
+        {
+          "rank": 5,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 나. \"자본시장과 금융투자업에 관한 법률\" 제3조제1항에 따른 금융투자상품 등 대통령령으로 정하는 금융상품",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 3호 - 2목",
+          "relevance_score": 0.2262246012687683
+        },
+        {
+          "rank": 6,
+          "doc_type": "Internal_DB",
+          "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 다. 신용카드이용대금을 결제할 수 있는 능력에 관한 사항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 3목",
+          "relevance_score": 0.22359275817871094
+        },
+        {
+          "rank": 7,
+          "doc_type": "Internal_DB",
+          "text": "② 신용카드업자는 제1항에 따른 발급신청이 다음 각 호의 요건을 갖추고 있는지를 확인하여야 한다. 다만, 제2호는 신용카드 발급신청인 경우에만 적용한다. 2. 신용카드 한도액이 신용카드업자가 정하는 신용한도 산정(算定) 기준(다음 각 목의 사항이 포함되어야 한다)에 따른 개인신용한도를 넘지 아니할 것 마. 그 밖에 신용한도 산정에 중요한 사항으로서 대통령령으로 정하는 사항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 5목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 14조 - 2항 - 2호 - 5목",
+          "relevance_score": 0.2215183973312378
+        },
+        {
+          "rank": 8,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 2호",
+          "relevance_score": 0.2190837860107422
+        },
+        {
+          "rank": 9,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 2. \"신용카드업\"이란 다음 각 목의 업무 중 나목의 업무를 포함한 둘 이상의 업무를 업(業)으로 하는 것을 말한다. 다. 신용카드가맹점의 모집 및 관리",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 2호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 2호 - 3목",
+          "relevance_score": 0.20950132608413696
+        }
+      ]
+    },
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "enough_context": {
+      "enough_context": "NOT_ENOUGH",
+      "reason": "질문은 신용카드와 체크카드의 법적 차이에 대해 묻고 있으나, 관련 법령(예: 신용카드법, 체크카드법) 조항 번호, 구체적인 절차, 요건 등 구체적이고 명확한 법적 근거가 명시되어 있지 않습니다. 단순히 두 카드의 기능적 차이(결제 방식, 한도, 결제 시점 등)에 대한 일반 설명만 제공되어 있어, 법적 쟁점을 명확히 해결하기에는 충분하지 않습니다."
+    },
+    "context_retry_count": 1
+  }
+}

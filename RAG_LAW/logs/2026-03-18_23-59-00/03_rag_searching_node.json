@@ -1,0 +1,540 @@
+{
+  "node": "rag_searching_node",
+  "order": 3,
+  "timestamp": "2026-03-18T23:59:13.886302",
+  "input": {
+    "original_input": {
+      "query": "보이스피싱 당했어요.. 무서워요.. 처벌 안 돼요?",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "보이스피싱 당했어요.. 무서워요.. 처벌 안 돼요?",
+    "extended_query": "보이스피싱 처벌 가능 여부 및 대응 방안 확인",
+    "all_contexts": [],
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "combined_queries": {
+      "combined_queries": [
+        {
+          "query": "보이스피싱 처벌 가능 여부 및 대응 방안 확인",
+          "type": "Question",
+          "position": null,
+          "reason": null
+        }
+      ]
+    },
+    "rag_results": {
+      "list_rag_results": [
+        {
+          "search_rank": 0,
+          "text": "청소년 보호법 제8장 벌칙 제61조(벌칙) ② 제43조를 위반하여 관계 공무원의 검사 및 조사를 거부ㆍ방해 또는 기피한 사람은 300만원 이하의 벌금에 처한다.",
+          "source": "제8장 벌칙 - 61조 - 2항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제8장 벌칙 - 61조 - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.11260807514190674
+        },
+        {
+          "search_rank": 1,
+          "text": "정보통신망 이용촉진 및 정보보호 등에 관한 법률 제10장 벌칙 제74조(벌칙) ① 다음 각 호의 어느 하나에 해당하는 자는 1년 이하의 징역 또는 1천만원 이하의 벌금에 처한다. 3. 제44조의7제1항제3호를 위반하여 공포심이나 불안감을 유발하는 부호ㆍ문언ㆍ음향ㆍ화상 또는 영상을 반복적으로 상대방에게 도달하게 한 자",
+          "source": "제10장 벌칙 - 74조 - 1항 - 3호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제10장 벌칙 - 74조 - 1항 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1015162467956543
+        },
+        {
+          "search_rank": 2,
+          "text": "채권의 공정한 추심에 관한 법률  제15조(벌칙) ① 제9조제1호를 위반하여 채무자 또는 관계인을 폭행ㆍ협박ㆍ체포 또는 감금하거나 그에게 위계나 위력을 사용하여 채권추심행위를 한 자는 5년 이하의 징역 또는 5천만원 이하의 벌금에 처한다.",
+          "source": " - 15조 - 1항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 15조 - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.10022938251495361
+        },
+        {
+          "search_rank": 3,
+          "text": " 1. 해당 위반행위에 대한 시정명령",
+          "source": "제7장 감독ㆍ검사 - 53조 - 1항 - 1호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제7장 감독ㆍ검사 - 53조 - 1항 - 1호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.09813481569290161
+        },
+        {
+          "search_rank": 4,
+          "text": " 2. 해당 위반행위에 대한 시정명령",
+          "source": "제7장 감독 - 134조 - 1항 - 2호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제7장 감독 - 134조 - 1항 - 2호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.09520399570465088
+        },
+        {
+          "search_rank": 5,
+          "text": "채권의 공정한 추심에 관한 법률  제9조(폭행ㆍ협박 등의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 3. 정당한 사유 없이 반복적으로 또는 야간에 전화하는 등 말ㆍ글ㆍ음향ㆍ영상 또는 물건을 채무자나 관계인에게 도달하게 함으로써 공포심이나 불안감을 유발하여 사생활 또는 업무의 평온을 심하게 해치는 행위",
+          "source": " - 9조 - 3호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 9조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.09023892879486084
+        },
+        {
+          "search_rank": 6,
+          "text": "개인정보 보호법 제9장 보칙 제64조의2(과징금의 부과) ④ 보호위원회는 제1항에 따른 과징금을 부과하는 경우에는 위반행위에 상응하는 비례성과 침해 예방에 대한 효과성이 확보될 수 있도록 다음 각 호의 사항을 고려하여야 한다. 5. 개인정보가 분실ㆍ도난ㆍ유출ㆍ위조ㆍ변조ㆍ훼손된 경우 위반행위와의 관련성 및 분실ㆍ도난ㆍ유출ㆍ위조ㆍ변조ㆍ훼손의 규모",
+          "source": "제9장 보칙 - 64조(가지2) - 4항 - 5호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제9장 보칙 - 64조(가지2) - 4항 - 5호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.08665549755096436
+        },
+        {
+          "search_rank": 7,
+          "text": " 4. 위법행위로 인하여 조치를 받았다는 사실의 공표명령 또는 게시명령",
+          "source": "제6장 감독 및 처분 - 51조 - 2항 - 4호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 감독 및 처분 - 51조 - 2항 - 4호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.08380991220474243
+        },
+        {
+          "search_rank": 8,
+          "text": " 2. 해당 위반행위의 시정명령",
+          "source": "제3장 감독 - 24조 - 1항 - 2호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 감독 - 24조 - 1항 - 2호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.08033102750778198
+        },
+        {
+          "search_rank": 9,
+          "text": "청소년 보호법 제7장 보칙 제54조(과징금) ③ 시장ㆍ군수ㆍ구청장은 제58조제1호ㆍ제3호ㆍ제4호ㆍ제5호(제30조제8호를 위반하는 행위에 한정한다) 또는 제59조제6호ㆍ제8호에 해당하는 행위로 인하여 이익을 취득한 자에 대하여 과징금을 부과하는 경우 청소년이 위ㆍ변조 또는 도용된 신분증을 사용하여 그 행위자로 하여금 청소년인 사실을 알지 못하게 한 사정 또는 행위자에게 폭행 또는 협박을 하여 청소년임을",
+          "source": "제7장 보칙 - 54조 - 3항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제7장 보칙 - 54조 - 3항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.07583636045455933
+        }
+      ]
+    },
+    "all_contexts": [
+      {
+        "rank": 0,
+        "doc_type": "Internal_DB",
+        "text": "청소년 보호법 제8장 벌칙 제61조(벌칙) ② 제43조를 위반하여 관계 공무원의 검사 및 조사를 거부ㆍ방해 또는 기피한 사람은 300만원 이하의 벌금에 처한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제8장 벌칙 - 61조 - 2항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제8장 벌칙 - 61조 - 2항",
+        "relevance_score": 0.11260807514190674
+      },
+      {
+        "rank": 1,
+        "doc_type": "Internal_DB",
+        "text": "정보통신망 이용촉진 및 정보보호 등에 관한 법률 제10장 벌칙 제74조(벌칙) ① 다음 각 호의 어느 하나에 해당하는 자는 1년 이하의 징역 또는 1천만원 이하의 벌금에 처한다. 3. 제44조의7제1항제3호를 위반하여 공포심이나 불안감을 유발하는 부호ㆍ문언ㆍ음향ㆍ화상 또는 영상을 반복적으로 상대방에게 도달하게 한 자",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제10장 벌칙 - 74조 - 1항 - 3호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제10장 벌칙 - 74조 - 1항 - 3호",
+        "relevance_score": 0.1015162467956543
+      },
+      {
+        "rank": 2,
+        "doc_type": "Internal_DB",
+        "text": "채권의 공정한 추심에 관한 법률  제15조(벌칙) ① 제9조제1호를 위반하여 채무자 또는 관계인을 폭행ㆍ협박ㆍ체포 또는 감금하거나 그에게 위계나 위력을 사용하여 채권추심행위를 한 자는 5년 이하의 징역 또는 5천만원 이하의 벌금에 처한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": " - 15조 - 1항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": " - 15조 - 1항",
+        "relevance_score": 0.10022938251495361
+      },
+      {
+        "rank": 3,
+        "doc_type": "Internal_DB",
+        "text": " 1. 해당 위반행위에 대한 시정명령",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제7장 감독ㆍ검사 - 53조 - 1항 - 1호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제7장 감독ㆍ검사 - 53조 - 1항 - 1호",
+        "relevance_score": 0.09813481569290161
+      },
+      {
+        "rank": 4,
+        "doc_type": "Internal_DB",
+        "text": " 2. 해당 위반행위에 대한 시정명령",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제7장 감독 - 134조 - 1항 - 2호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제7장 감독 - 134조 - 1항 - 2호",
+        "relevance_score": 0.09520399570465088
+      },
+      {
+        "rank": 5,
+        "doc_type": "Internal_DB",
+        "text": "채권의 공정한 추심에 관한 법률  제9조(폭행ㆍ협박 등의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 3. 정당한 사유 없이 반복적으로 또는 야간에 전화하는 등 말ㆍ글ㆍ음향ㆍ영상 또는 물건을 채무자나 관계인에게 도달하게 함으로써 공포심이나 불안감을 유발하여 사생활 또는 업무의 평온을 심하게 해치는 행위",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": " - 9조 - 3호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": " - 9조 - 3호",
+        "relevance_score": 0.09023892879486084
+      },
+      {
+        "rank": 6,
+        "doc_type": "Internal_DB",
+        "text": "개인정보 보호법 제9장 보칙 제64조의2(과징금의 부과) ④ 보호위원회는 제1항에 따른 과징금을 부과하는 경우에는 위반행위에 상응하는 비례성과 침해 예방에 대한 효과성이 확보될 수 있도록 다음 각 호의 사항을 고려하여야 한다. 5. 개인정보가 분실ㆍ도난ㆍ유출ㆍ위조ㆍ변조ㆍ훼손된 경우 위반행위와의 관련성 및 분실ㆍ도난ㆍ유출ㆍ위조ㆍ변조ㆍ훼손의 규모",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제9장 보칙 - 64조(가지2) - 4항 - 5호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제9장 보칙 - 64조(가지2) - 4항 - 5호",
+        "relevance_score": 0.08665549755096436
+      },
+      {
+        "rank": 7,
+        "doc_type": "Internal_DB",
+        "text": " 4. 위법행위로 인하여 조치를 받았다는 사실의 공표명령 또는 게시명령",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제6장 감독 및 처분 - 51조 - 2항 - 4호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제6장 감독 및 처분 - 51조 - 2항 - 4호",
+        "relevance_score": 0.08380991220474243
+      },
+      {
+        "rank": 8,
+        "doc_type": "Internal_DB",
+        "text": " 2. 해당 위반행위의 시정명령",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제3장 감독 - 24조 - 1항 - 2호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제3장 감독 - 24조 - 1항 - 2호",
+        "relevance_score": 0.08033102750778198
+      },
+      {
+        "rank": 9,
+        "doc_type": "Internal_DB",
+        "text": "청소년 보호법 제7장 보칙 제54조(과징금) ③ 시장ㆍ군수ㆍ구청장은 제58조제1호ㆍ제3호ㆍ제4호ㆍ제5호(제30조제8호를 위반하는 행위에 한정한다) 또는 제59조제6호ㆍ제8호에 해당하는 행위로 인하여 이익을 취득한 자에 대하여 과징금을 부과하는 경우 청소년이 위ㆍ변조 또는 도용된 신분증을 사용하여 그 행위자로 하여금 청소년인 사실을 알지 못하게 한 사정 또는 행위자에게 폭행 또는 협박을 하여 청소년임을",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제7장 보칙 - 54조 - 3항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제7장 보칙 - 54조 - 3항",
+        "relevance_score": 0.07583636045455933
+      }
+    ],
+    "reranked_contexts": {
+      "list_contexts": [
+        {
+          "rank": 0,
+          "doc_type": "Internal_DB",
+          "text": "청소년 보호법 제8장 벌칙 제61조(벌칙) ② 제43조를 위반하여 관계 공무원의 검사 및 조사를 거부ㆍ방해 또는 기피한 사람은 300만원 이하의 벌금에 처한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제8장 벌칙 - 61조 - 2항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제8장 벌칙 - 61조 - 2항",
+          "relevance_score": 0.11260807514190674
+        },
+        {
+          "rank": 1,
+          "doc_type": "Internal_DB",
+          "text": "정보통신망 이용촉진 및 정보보호 등에 관한 법률 제10장 벌칙 제74조(벌칙) ① 다음 각 호의 어느 하나에 해당하는 자는 1년 이하의 징역 또는 1천만원 이하의 벌금에 처한다. 3. 제44조의7제1항제3호를 위반하여 공포심이나 불안감을 유발하는 부호ㆍ문언ㆍ음향ㆍ화상 또는 영상을 반복적으로 상대방에게 도달하게 한 자",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제10장 벌칙 - 74조 - 1항 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제10장 벌칙 - 74조 - 1항 - 3호",
+          "relevance_score": 0.1015162467956543
+        },
+        {
+          "rank": 2,
+          "doc_type": "Internal_DB",
+          "text": "채권의 공정한 추심에 관한 법률  제15조(벌칙) ① 제9조제1호를 위반하여 채무자 또는 관계인을 폭행ㆍ협박ㆍ체포 또는 감금하거나 그에게 위계나 위력을 사용하여 채권추심행위를 한 자는 5년 이하의 징역 또는 5천만원 이하의 벌금에 처한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 15조 - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": " - 15조 - 1항",
+          "relevance_score": 0.10022938251495361
+        },
+        {
+          "rank": 3,
+          "doc_type": "Internal_DB",
+          "text": " 1. 해당 위반행위에 대한 시정명령",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제7장 감독ㆍ검사 - 53조 - 1항 - 1호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제7장 감독ㆍ검사 - 53조 - 1항 - 1호",
+          "relevance_score": 0.09813481569290161
+        },
+        {
+          "rank": 4,
+          "doc_type": "Internal_DB",
+          "text": " 2. 해당 위반행위에 대한 시정명령",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제7장 감독 - 134조 - 1항 - 2호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제7장 감독 - 134조 - 1항 - 2호",
+          "relevance_score": 0.09520399570465088
+        },
+        {
+          "rank": 5,
+          "doc_type": "Internal_DB",
+          "text": "채권의 공정한 추심에 관한 법률  제9조(폭행ㆍ협박 등의 금지) 채권추심자는 채권추심과 관련하여 다음 각 호의 어느 하나에 해당하는 행위를 하여서는 아니 된다. 3. 정당한 사유 없이 반복적으로 또는 야간에 전화하는 등 말ㆍ글ㆍ음향ㆍ영상 또는 물건을 채무자나 관계인에게 도달하게 함으로써 공포심이나 불안감을 유발하여 사생활 또는 업무의 평온을 심하게 해치는 행위",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": " - 9조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": " - 9조 - 3호",
+          "relevance_score": 0.09023892879486084
+        },
+        {
+          "rank": 6,
+          "doc_type": "Internal_DB",
+          "text": "개인정보 보호법 제9장 보칙 제64조의2(과징금의 부과) ④ 보호위원회는 제1항에 따른 과징금을 부과하는 경우에는 위반행위에 상응하는 비례성과 침해 예방에 대한 효과성이 확보될 수 있도록 다음 각 호의 사항을 고려하여야 한다. 5. 개인정보가 분실ㆍ도난ㆍ유출ㆍ위조ㆍ변조ㆍ훼손된 경우 위반행위와의 관련성 및 분실ㆍ도난ㆍ유출ㆍ위조ㆍ변조ㆍ훼손의 규모",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제9장 보칙 - 64조(가지2) - 4항 - 5호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제9장 보칙 - 64조(가지2) - 4항 - 5호",
+          "relevance_score": 0.08665549755096436
+        },
+        {
+          "rank": 7,
+          "doc_type": "Internal_DB",
+          "text": " 4. 위법행위로 인하여 조치를 받았다는 사실의 공표명령 또는 게시명령",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 감독 및 처분 - 51조 - 2항 - 4호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제6장 감독 및 처분 - 51조 - 2항 - 4호",
+          "relevance_score": 0.08380991220474243
+        },
+        {
+          "rank": 8,
+          "doc_type": "Internal_DB",
+          "text": " 2. 해당 위반행위의 시정명령",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 감독 - 24조 - 1항 - 2호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제3장 감독 - 24조 - 1항 - 2호",
+          "relevance_score": 0.08033102750778198
+        },
+        {
+          "rank": 9,
+          "doc_type": "Internal_DB",
+          "text": "청소년 보호법 제7장 보칙 제54조(과징금) ③ 시장ㆍ군수ㆍ구청장은 제58조제1호ㆍ제3호ㆍ제4호ㆍ제5호(제30조제8호를 위반하는 행위에 한정한다) 또는 제59조제6호ㆍ제8호에 해당하는 행위로 인하여 이익을 취득한 자에 대하여 과징금을 부과하는 경우 청소년이 위ㆍ변조 또는 도용된 신분증을 사용하여 그 행위자로 하여금 청소년인 사실을 알지 못하게 한 사정 또는 행위자에게 폭행 또는 협박을 하여 청소년임을",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제7장 보칙 - 54조 - 3항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제7장 보칙 - 54조 - 3항",
+          "relevance_score": 0.07583636045455933
+        }
+      ]
+    }
+  }
+}

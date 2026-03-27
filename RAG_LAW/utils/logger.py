@@ -4,22 +4,22 @@ from datetime import datetime
 from pathlib import Path
 from utils.config import Config
 
-def setup_logger(name: str = "law_agent"):
+class RealTimeFileHandler(logging.FileHandler):
+    """실시간으로 로그가 기록되도록 하는 핸들러"""
+    def emit(self, record):
+        super().emit(record)
+        self.flush()
+
+def setup_logger(name: str = "Legal_Agent"):
     """로거 설정"""
-    
-    # 로그 디렉토리 생성
-    log_dir = Path("logs")
-    log_dir.mkdir(exist_ok=True)
     
     # 로거 생성
     logger = logging.getLogger(name)
-    logger.setLevel(getattr(logging, Config.LOG_LEVEL))
     
-    # 이미 핸들러가 있으면 제거
     if logger.handlers:
         logger.handlers.clear()
     
-    # 포맷터 설정
+    # 포맷터
     formatter = logging.Formatter(
         '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     )
@@ -30,13 +30,15 @@ def setup_logger(name: str = "law_agent"):
     logger.addHandler(console_handler)
     
     # 파일 핸들러
-    today = datetime.now().strftime("%Y%m%d")
-    file_handler = logging.FileHandler(
-        log_dir / f"law_agent_{today}.log",
-        encoding='utf-8'
-    )
-    file_handler.setFormatter(formatter)
-    logger.addHandler(file_handler)
+    if Config.ENABLE_LOCAL_LOGGING:
+        log_dir = Path(Config.LOG_DIR)
+        log_dir.mkdir(exist_ok = True)
+        
+        now_str = datetime.now().strftime('%Y%m%d_%H%M%S')
+        log_filename = log_dir / f"law_agent_{now_str}.log"
+        file_handler = RealTimeFileHandler(log_filename, encoding = 'utf-8')
+        file_handler.setFormatter(formatter)
+        logger.addHandler(file_handler)
     
     return logger
 

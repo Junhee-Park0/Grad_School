@@ -1,0 +1,19 @@
+{
+  "node": "routing_node",
+  "order": 1,
+  "timestamp": "2026-03-18T15:37:35.863871",
+  "input": {
+    "original_input": {
+      "query": "신용카드와 체크카드의 차이가 모지",
+      "document_path": null
+    },
+    "input_query": "신용카드와 체크카드의 차이가 모지",
+    "all_contexts": [],
+    "answer_history": []
+  },
+  "output": {
+    "input_type": "Query_Only",
+    "context_retry_count": 0,
+    "answer_retry_count": 0
+  }
+}

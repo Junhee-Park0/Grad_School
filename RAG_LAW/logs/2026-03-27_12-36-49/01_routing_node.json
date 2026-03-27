@@ -1,0 +1,19 @@
+{
+  "node": "routing_node",
+  "order": 1,
+  "timestamp": "2026-03-27T12:36:49.053477",
+  "input": {
+    "original_input": {
+      "query": "미성년자도 주식 계좌를 개설할 수 있나요? 어떻게 해요",
+      "document_path": null
+    },
+    "input_query": "미성년자도 주식 계좌를 개설할 수 있나요? 어떻게 해요",
+    "all_contexts": [],
+    "answer_history": []
+  },
+  "output": {
+    "input_type": "Query_Only",
+    "context_retry_count": 0,
+    "answer_retry_count": 0
+  }
+}

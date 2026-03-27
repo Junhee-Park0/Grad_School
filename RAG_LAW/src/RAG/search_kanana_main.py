@@ -4,14 +4,28 @@
 - Hybrid RAG 기반 검색 기능
 - Kanana 활용하여 답변 생성
 """
+import os
+
+# ChromaDB 텔레메트리 비활성화 (오류 방지)
+os.environ["ANONYMIZED_TELEMETRY"] = "False"
+
+# posthog 텔레메트리 오류 방지를 위한 패치
+try:
+    import posthog
+    def dummy_capture(*args, **kwargs):
+        pass
+    posthog.capture = dummy_capture
+except ImportError:
+    pass
+
 import chromadb
-import re, os, math, pickle, sys 
+import re, math, pickle, sys 
 from pathlib import Path
 from typing import List, Dict, Optional, Tuple
 import numpy as np
 from collections import Counter, defaultdict
 import torch    
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig, pipeline
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 
 from src.RAG.naive_search import NaiveSearchEngine
 # search, save_filtered, load_filtered 함수
@@ -93,34 +107,31 @@ class NaiveSearchWithAnswer():
             return "답변을 생성하는 중 에러가 발생했습니다.", formatted_docs
 
     def filter_and_generate_answer(self, top_k : int = 10, where : Optional[Dict] = None):
+        # 요청마다 검색 상위 개수를 동적으로 변경
+        self.search_engine.top_k = top_k
         filtered_docs = self.search(where = where)
         answer, formatted_docs = self.generate_answer(filtered_docs)
         return answer, formatted_docs
 
 if __name__ == "__main__":
-    # if len(sys.argv) < 2: 
-    #     print("검색할 쿼리를 입력해주세요.")
-    #     sys.exit(1)
-    # query = sys.argv[1]
+    
     query = input("검색할 쿼리를 입력해주세요: ")
     # ChromaDB 경로 설정
     lawdb_path = "data/Database/LawDB"
     client = chromadb.PersistentClient(path = lawdb_path)
     collection = client.get_or_create_collection("laws")
     # pipeline 설정
+    sys.path.append(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+    from utils.config import Config
     model = "kakaocorp/kanana-1.5-2.1b-instruct-2505"
-    tokenizer = AutoTokenizer.from_pretrained(model)
-    # 모델 양자화해서 받아오기
-    bnb_config = BitsAndBytesConfig(
-    load_in_4bit = True,                
-    bnb_4bit_quant_type = "nf4",
-    bnb_4bit_use_double_quant = True,
-    bnb_4bit_compute_dtype = torch.bfloat16)
+    model_path = Config.KANANA_MODEL_PATH
+    tokenizer = AutoTokenizer.from_pretrained(model_path, fix_mistral_regex = True)
+    # CUDA 미사용 환경용: bitsandbytes/4bit 양자화 없이 CPU로 모델 로딩
     model = AutoModelForCausalLM.from_pretrained(
-        model,
-        device_map = "auto",
-        quantization_config = bnb_config,
-        dtype = torch.bfloat16)
+        model_path,
+        device_map = "cpu",
+        torch_dtype = torch.float32
+    )
     # pipeline 생성
     pipeline = pipeline("text-generation", model = model, tokenizer = tokenizer)
     # NaiveSearchWithAnswer 객체 생성

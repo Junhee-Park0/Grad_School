@@ -1,0 +1,20 @@
+{
+  "node": "query_rewriting_node",
+  "order": 2,
+  "timestamp": "2026-03-18T23:59:08.283103",
+  "input": {
+    "original_input": {
+      "query": "보이스피싱 당했어요.. 무서워요.. 처벌 안 돼요?",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "보이스피싱 당했어요.. 무서워요.. 처벌 안 돼요?",
+    "all_contexts": [],
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "extended_query": "보이스피싱 처벌 가능 여부 및 대응 방안 확인"
+  }
+}

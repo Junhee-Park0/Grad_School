@@ -1,0 +1,544 @@
+{
+  "node": "context_evaluating_node",
+  "order": 4,
+  "timestamp": "2026-03-18T23:44:12.349360",
+  "input": {
+    "original_input": {
+      "query": "신용카드와 체크카드의 차이점이 뭔가요옹",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "신용카드와 체크카드의 차이점이 뭔가요옹",
+    "extended_query": "신용카드와 체크카드의 차이점이 뭔가요옹",
+    "combined_queries": {
+      "combined_queries": [
+        {
+          "query": "신용카드와 체크카드의 차이점이 뭔가요옹",
+          "type": "Question",
+          "position": null,
+          "reason": null
+        }
+      ]
+    },
+    "rag_results": {
+      "list_rag_results": [
+        {
+          "search_rank": 0,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다.",
+          "source": "제1장 총칙 - 2조 - 3호",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1893061399459839
+        },
+        {
+          "search_rank": 1,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 가. 금전채무의 상환",
+          "source": "제1장 총칙 - 2조 - 3호 - 1목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1877422332763672
+        },
+        {
+          "search_rank": 2,
+          "text": "3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 라. 그 밖에 사행행위 등 건전한 국민생활을 저해하고 선량한 풍속을 해치는 행위로 대통령령으로 정하는 사항의 이용 대가 및 이용에 따른 금전의 지급",
+          "source": "제1장 총칙 - 2조 - 3호 - 4목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 4목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.18177813291549683
+        },
+        {
+          "search_rank": 3,
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 나. \"자본시장과 금융투자업에 관한 법률\" 제3조제1항에 따른 금융투자상품 등 대통령령으로 정하는 금융상품",
+          "source": "제1장 총칙 - 2조 - 3호 - 2목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.17906218767166138
+        },
+        {
+          "search_rank": 4,
+          "text": " 나. 최저사용금액이 신용카드사용분보다 크고 신용카드사용분과 직불카드등사용분을 합친 금액(해당 과세연도의 총급여액이 7천만원 이하인 경우에는 문화체육사용분을 추가로 합친 금액)보다 작거나 같은 경우: 신용카드사용분 × 100분의 15 + (최저사용금액 - 신용카드사용분) × 100분의 30",
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 2목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1726258397102356
+        },
+        {
+          "search_rank": 5,
+          "text": " ① 대통령령으로 정하는 신용카드업자(이하 이 조에서 \"신용카드업자\"라 한다)는 부가가치세 체납률 등을 고려하여 대통령령으로 정하는 사업자(이하 이 조에서 \"특례사업자\"라 한다)가 부가가치세가 과세되는 재화 또는 용역을 공급(\"여신전문금융업법\" 제2조에 따른 신용카드ㆍ직불카드 또는 선불카드를 사용한 거래로 한정한다)하고 그 신용카드업자로부터 공급대가를 받는 ",
+          "source": "제3장 간접국세 - 106조(가지10) - 1항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 간접국세 - 106조(가지10) - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1618708372116089
+        },
+        {
+          "search_rank": 6,
+          "text": "이 경우 신용카드등사용금액이 제1호, 제2호 및 제3호의 금액에 중복하여 해당하는 경우에는 그 중 하나에 해당하는 것으로 보아 소득공제를 적용한다. 6. 다음 각 목의 구분에 따른 금액. 다만, 2023년 1월 1일부터 2023년 12월 31일까지 사용한 신용카드등사용금액에 대한 신용카드등소득공제금액은 별표에 따라 계산한 금액으로 한다. 가. 최저사용금액이 신용카드사용분보다 작거나 같은 경우: 최저사용금액 × 100분의 15",
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 1목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1582019329071045
+        },
+        {
+          "search_rank": 7,
+          "text": "6. 다음 각 목의 구분에 따른 금액. 다만, 2023년 1월 1일부터 2023년 12월 31일까지 사용한 신용카드등사용금액에 대한 신용카드등소득공제금액은 별표에 따라 계산한 금액으로 한다. ) 해당 과세연도의 총급여액이 7천만원을 초과하는 경우: 신용카드사용분 × 100분의 15 + 직불카드등사용분 × 100분의 30 + (최저사용금액 - 신용카드사용분 - 직불카드등사용분) × 100분의 40')",
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1576518416404724
+        },
+        {
+          "search_rank": 8,
+          "text": " 최저사용금액이 신용카드사용분과 직불카드등사용분을 합친 금액보다 큰 경우: 다음 구분에 따른 금액', ' 1) 해당 과세연도의 총급여액이 7천만원 이하인 경우: 신용카드사용분 × 100분의 15 + (직불카드등사용분 + 문화체육사용분) × 100분의 30 + (최저사용금액 - 신용카드사용분 - 직불카드등사용분 - 문화체육사용분) × 100분의 40', ' 2",
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.15112268924713135
+        },
+        {
+          "search_rank": 9,
+          "text": "여신전문금융업법 제3장 여신전문금융업 제1절 신용카드업 제16조(신용카드회원등에 대한 책임) ⑩ 신용카드회원이 서면, 전화, 전자문서 등으로 신용카드의 이용금액에 대하여 이의를 제기할 경우 신용카드업자는 이에 대한 조사를 마칠 때까지 그 신용카드회원으로부터 그 금액을 받을 수 없다.",
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 16조 - 10항",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 16조 - 10항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "relevance_score": 0.1506614089012146
+        }
+      ]
+    },
+    "all_contexts": [
+      {
+        "rank": 0,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 3호",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 3호",
+        "relevance_score": 0.1893061399459839
+      },
+      {
+        "rank": 1,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 가. 금전채무의 상환",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 3호 - 1목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 3호 - 1목",
+        "relevance_score": 0.1877422332763672
+      },
+      {
+        "rank": 2,
+        "doc_type": "Internal_DB",
+        "text": "3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 라. 그 밖에 사행행위 등 건전한 국민생활을 저해하고 선량한 풍속을 해치는 행위로 대통령령으로 정하는 사항의 이용 대가 및 이용에 따른 금전의 지급",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 3호 - 4목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 3호 - 4목",
+        "relevance_score": 0.18177813291549683
+      },
+      {
+        "rank": 3,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 나. \"자본시장과 금융투자업에 관한 법률\" 제3조제1항에 따른 금융투자상품 등 대통령령으로 정하는 금융상품",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제1장 총칙 - 2조 - 3호 - 2목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제1장 총칙 - 2조 - 3호 - 2목",
+        "relevance_score": 0.17906218767166138
+      },
+      {
+        "rank": 4,
+        "doc_type": "Internal_DB",
+        "text": " 나. 최저사용금액이 신용카드사용분보다 크고 신용카드사용분과 직불카드등사용분을 합친 금액(해당 과세연도의 총급여액이 7천만원 이하인 경우에는 문화체육사용분을 추가로 합친 금액)보다 작거나 같은 경우: 신용카드사용분 × 100분의 15 + (최저사용금액 - 신용카드사용분) × 100분의 30",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 2목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 2목",
+        "relevance_score": 0.1726258397102356
+      },
+      {
+        "rank": 5,
+        "doc_type": "Internal_DB",
+        "text": " ① 대통령령으로 정하는 신용카드업자(이하 이 조에서 \"신용카드업자\"라 한다)는 부가가치세 체납률 등을 고려하여 대통령령으로 정하는 사업자(이하 이 조에서 \"특례사업자\"라 한다)가 부가가치세가 과세되는 재화 또는 용역을 공급(\"여신전문금융업법\" 제2조에 따른 신용카드ㆍ직불카드 또는 선불카드를 사용한 거래로 한정한다)하고 그 신용카드업자로부터 공급대가를 받는 ",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제3장 간접국세 - 106조(가지10) - 1항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제3장 간접국세 - 106조(가지10) - 1항",
+        "relevance_score": 0.1618708372116089
+      },
+      {
+        "rank": 6,
+        "doc_type": "Internal_DB",
+        "text": "이 경우 신용카드등사용금액이 제1호, 제2호 및 제3호의 금액에 중복하여 해당하는 경우에는 그 중 하나에 해당하는 것으로 보아 소득공제를 적용한다. 6. 다음 각 목의 구분에 따른 금액. 다만, 2023년 1월 1일부터 2023년 12월 31일까지 사용한 신용카드등사용금액에 대한 신용카드등소득공제금액은 별표에 따라 계산한 금액으로 한다. 가. 최저사용금액이 신용카드사용분보다 작거나 같은 경우: 최저사용금액 × 100분의 15",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 1목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 1목",
+        "relevance_score": 0.1582019329071045
+      },
+      {
+        "rank": 7,
+        "doc_type": "Internal_DB",
+        "text": "6. 다음 각 목의 구분에 따른 금액. 다만, 2023년 1월 1일부터 2023년 12월 31일까지 사용한 신용카드등사용금액에 대한 신용카드등소득공제금액은 별표에 따라 계산한 금액으로 한다. ) 해당 과세연도의 총급여액이 7천만원을 초과하는 경우: 신용카드사용분 × 100분의 15 + 직불카드등사용분 × 100분의 30 + (최저사용금액 - 신용카드사용분 - 직불카드등사용분) × 100분의 40')",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+        "relevance_score": 0.1576518416404724
+      },
+      {
+        "rank": 8,
+        "doc_type": "Internal_DB",
+        "text": " 최저사용금액이 신용카드사용분과 직불카드등사용분을 합친 금액보다 큰 경우: 다음 구분에 따른 금액', ' 1) 해당 과세연도의 총급여액이 7천만원 이하인 경우: 신용카드사용분 × 100분의 15 + (직불카드등사용분 + 문화체육사용분) × 100분의 30 + (최저사용금액 - 신용카드사용분 - 직불카드등사용분 - 문화체육사용분) × 100분의 40', ' 2",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+        "relevance_score": 0.15112268924713135
+      },
+      {
+        "rank": 9,
+        "doc_type": "Internal_DB",
+        "text": "여신전문금융업법 제3장 여신전문금융업 제1절 신용카드업 제16조(신용카드회원등에 대한 책임) ⑩ 신용카드회원이 서면, 전화, 전자문서 등으로 신용카드의 이용금액에 대하여 이의를 제기할 경우 신용카드업자는 이에 대한 조사를 마칠 때까지 그 신용카드회원으로부터 그 금액을 받을 수 없다.",
+        "metadata": {
+          "eff_date": null,
+          "law_name": null,
+          "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 16조 - 10항",
+          "published_date": null,
+          "query_used": null,
+          "domain": null,
+          "title": null,
+          "editor": null
+        },
+        "source": "제3장 여신전문금융업 제1절 신용카드업 - 16조 - 10항",
+        "relevance_score": 0.1506614089012146
+      }
+    ],
+    "reranked_contexts": {
+      "list_contexts": [
+        {
+          "rank": 0,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 3호",
+          "relevance_score": 0.1893061399459839
+        },
+        {
+          "rank": 1,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 가. 금전채무의 상환",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 3호 - 1목",
+          "relevance_score": 0.1877422332763672
+        },
+        {
+          "rank": 2,
+          "doc_type": "Internal_DB",
+          "text": "3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 라. 그 밖에 사행행위 등 건전한 국민생활을 저해하고 선량한 풍속을 해치는 행위로 대통령령으로 정하는 사항의 이용 대가 및 이용에 따른 금전의 지급",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 4목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 3호 - 4목",
+          "relevance_score": 0.18177813291549683
+        },
+        {
+          "rank": 3,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제1장 총칙 제2조(정의) 이 법에서 사용하는 용어의 뜻은 다음과 같다. 3. \"신용카드\"란 이를 제시함으로써 반복하여 신용카드가맹점에서 다음 각 목을 제외한 사항을 결제할 수 있는 증표(證票)로서 신용카드업자(외국에서 신용카드업에 상당하는 영업을 영위하는 자를 포함한다)가 발행한 것을 말한다. 나. \"자본시장과 금융투자업에 관한 법률\" 제3조제1항에 따른 금융투자상품 등 대통령령으로 정하는 금융상품",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제1장 총칙 - 2조 - 3호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제1장 총칙 - 2조 - 3호 - 2목",
+          "relevance_score": 0.17906218767166138
+        },
+        {
+          "rank": 4,
+          "doc_type": "Internal_DB",
+          "text": " 나. 최저사용금액이 신용카드사용분보다 크고 신용카드사용분과 직불카드등사용분을 합친 금액(해당 과세연도의 총급여액이 7천만원 이하인 경우에는 문화체육사용분을 추가로 합친 금액)보다 작거나 같은 경우: 신용카드사용분 × 100분의 15 + (최저사용금액 - 신용카드사용분) × 100분의 30",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 2목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 2목",
+          "relevance_score": 0.1726258397102356
+        },
+        {
+          "rank": 5,
+          "doc_type": "Internal_DB",
+          "text": " ① 대통령령으로 정하는 신용카드업자(이하 이 조에서 \"신용카드업자\"라 한다)는 부가가치세 체납률 등을 고려하여 대통령령으로 정하는 사업자(이하 이 조에서 \"특례사업자\"라 한다)가 부가가치세가 과세되는 재화 또는 용역을 공급(\"여신전문금융업법\" 제2조에 따른 신용카드ㆍ직불카드 또는 선불카드를 사용한 거래로 한정한다)하고 그 신용카드업자로부터 공급대가를 받는 ",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 간접국세 - 106조(가지10) - 1항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제3장 간접국세 - 106조(가지10) - 1항",
+          "relevance_score": 0.1618708372116089
+        },
+        {
+          "rank": 6,
+          "doc_type": "Internal_DB",
+          "text": "이 경우 신용카드등사용금액이 제1호, 제2호 및 제3호의 금액에 중복하여 해당하는 경우에는 그 중 하나에 해당하는 것으로 보아 소득공제를 적용한다. 6. 다음 각 목의 구분에 따른 금액. 다만, 2023년 1월 1일부터 2023년 12월 31일까지 사용한 신용카드등사용금액에 대한 신용카드등소득공제금액은 별표에 따라 계산한 금액으로 한다. 가. 최저사용금액이 신용카드사용분보다 작거나 같은 경우: 최저사용금액 × 100분의 15",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 1목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 1목",
+          "relevance_score": 0.1582019329071045
+        },
+        {
+          "rank": 7,
+          "doc_type": "Internal_DB",
+          "text": "6. 다음 각 목의 구분에 따른 금액. 다만, 2023년 1월 1일부터 2023년 12월 31일까지 사용한 신용카드등사용금액에 대한 신용카드등소득공제금액은 별표에 따라 계산한 금액으로 한다. ) 해당 과세연도의 총급여액이 7천만원을 초과하는 경우: 신용카드사용분 × 100분의 15 + 직불카드등사용분 × 100분의 30 + (최저사용금액 - 신용카드사용분 - 직불카드등사용분) × 100분의 40')",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+          "relevance_score": 0.1576518416404724
+        },
+        {
+          "rank": 8,
+          "doc_type": "Internal_DB",
+          "text": " 최저사용금액이 신용카드사용분과 직불카드등사용분을 합친 금액보다 큰 경우: 다음 구분에 따른 금액', ' 1) 해당 과세연도의 총급여액이 7천만원 이하인 경우: 신용카드사용분 × 100분의 15 + (직불카드등사용분 + 문화체육사용분) × 100분의 30 + (최저사용금액 - 신용카드사용분 - 직불카드등사용분 - 문화체육사용분) × 100분의 40', ' 2",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제6장 그 밖의 조세특례 제1절 과세표준 양성화를 위한 조세특례 - 126조(가지2) - 2항 - 6호 - 3목",
+          "relevance_score": 0.15112268924713135
+        },
+        {
+          "rank": 9,
+          "doc_type": "Internal_DB",
+          "text": "여신전문금융업법 제3장 여신전문금융업 제1절 신용카드업 제16조(신용카드회원등에 대한 책임) ⑩ 신용카드회원이 서면, 전화, 전자문서 등으로 신용카드의 이용금액에 대하여 이의를 제기할 경우 신용카드업자는 이에 대한 조사를 마칠 때까지 그 신용카드회원으로부터 그 금액을 받을 수 없다.",
+          "metadata": {
+            "eff_date": null,
+            "law_name": null,
+            "law_path": "제3장 여신전문금융업 제1절 신용카드업 - 16조 - 10항",
+            "published_date": null,
+            "query_used": null,
+            "domain": null,
+            "title": null,
+            "editor": null
+          },
+          "source": "제3장 여신전문금융업 제1절 신용카드업 - 16조 - 10항",
+          "relevance_score": 0.1506614089012146
+        }
+      ]
+    },
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "enough_context": {
+      "enough_context": "NOT_ENOUGH",
+      "reason": "질문에 대해 신용카드와 체크카드의 구체적인 법적 차이점, 법적 근거, 절차, 조항 번호 등 명확한 수치나 법적 기준이 제시되지 않았습니다. 단순히 두 카드의 기능적 차이(결제 방식, 한도 등)에 대한 일반적 설명만 제공되어, 법적 쟁점을 명확히 해결하기에는 부족합니다."
+    },
+    "context_retry_count": 1
+  }
+}

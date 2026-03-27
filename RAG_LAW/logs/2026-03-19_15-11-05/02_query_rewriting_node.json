@@ -1,0 +1,20 @@
+{
+  "node": "query_rewriting_node",
+  "order": 2,
+  "timestamp": "2026-03-19T15:11:16.245212",
+  "input": {
+    "original_input": {
+      "query": "개인정보가 유출된 것 같은데, 혹시 처벌 가능한가요..",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "개인정보가 유출된 것 같은데, 혹시 처벌 가능한가요..",
+    "all_contexts": [],
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "extended_query": "개인정보 유출 시 처벌 가능 여부 확인"
+  }
+}

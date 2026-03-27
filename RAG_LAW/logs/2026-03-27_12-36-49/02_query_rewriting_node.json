@@ -1,0 +1,20 @@
+{
+  "node": "query_rewriting_node",
+  "order": 2,
+  "timestamp": "2026-03-27T12:37:00.623712",
+  "input": {
+    "original_input": {
+      "query": "미성년자도 주식 계좌를 개설할 수 있나요? 어떻게 해요",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "미성년자도 주식 계좌를 개설할 수 있나요? 어떻게 해요",
+    "all_contexts": [],
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "extended_query": "미성년자 주식 계좌 개설 가능 여부 및 절차 안내"
+  }
+}

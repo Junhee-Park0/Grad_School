@@ -1,0 +1,20 @@
+{
+  "node": "query_rewriting_node",
+  "order": 2,
+  "timestamp": "2026-03-19T00:20:10.979851",
+  "input": {
+    "original_input": {
+      "query": "개인회생과 개인파산은 어떤 차이가 있죠?",
+      "document_path": null
+    },
+    "input_type": "Query_Only",
+    "input_query": "개인회생과 개인파산은 어떤 차이가 있죠?",
+    "all_contexts": [],
+    "context_retry_count": 0,
+    "answer_retry_count": 0,
+    "answer_history": []
+  },
+  "output": {
+    "extended_query": "개인회생과 개인파산의 법적 차이점 설명"
+  }
+}

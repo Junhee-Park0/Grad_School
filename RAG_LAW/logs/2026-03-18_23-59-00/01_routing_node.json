@@ -1,0 +1,19 @@
+{
+  "node": "routing_node",
+  "order": 1,
+  "timestamp": "2026-03-18T23:59:00.860013",
+  "input": {
+    "original_input": {
+      "query": "보이스피싱 당했어요.. 무서워요.. 처벌 안 돼요?",
+      "document_path": null
+    },
+    "input_query": "보이스피싱 당했어요.. 무서워요.. 처벌 안 돼요?",
+    "all_contexts": [],
+    "answer_history": []
+  },
+  "output": {
+    "input_type": "Query_Only",
+    "context_retry_count": 0,
+    "answer_retry_count": 0
+  }
+}
